@@ -19,6 +19,47 @@
         .shad {
             box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);
         }
+
+        #navv {
+            margin-left: 150px
+        }
+
+        .img12 {
+            margin-left: 150px;
+        }
+
+        ul li {
+            padding: 5px;
+            transition: 0.1s;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        ul li:hover {
+            background-color:#316DC3 !important;
+            padding: 5px;
+            color: #333333 !important;
+            border-radius: 30px;
+        }
+
+        ul li a:hover {
+            color: white !important;
+            background-color:  #316DC3 !important;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            #navv {
+
+                margin-left: -50px !important;
+
+            }
+
+            .img12 {
+                margin-left: -10px;
+            }
+        }
     </style>
 </head>
 
@@ -43,9 +84,8 @@
     </div>
 
 
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="logo.png" alt=""
+        <a class="navbar-brand" href="#"><img class="img12" src="logo.png" alt=""
                 style="width: 200px; height: auto;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,27 +93,71 @@
         </button>
 
         <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+            <ul class="navbar-nav mr-auto" id="navv">
+                <li class="nav-item active px-3">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown px-3">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                        About
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Introduction</a>
+                        <a class="dropdown-item" href="#">Chairman Message</a>
+                        <a class="dropdown-item" href="#">Saylani Annual Report</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+
+                <li class="nav-item dropdown px-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Saylani Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">EDUCATION</a>
+                        <a class="dropdown-item" href="#">Medical</a>
+                        <a class="dropdown-item" href="#">Welfare</a>
+                        <a class="dropdown-item" href="#">Hajj Application Form</a>
+                        <a class="dropdown-item" href="#">Saylani Dastarkhwan</a>
+                        <a class="dropdown-item" href="#">Saylani RO Plant</a>
+                        <a class="dropdown-item" href="#">Online Sadqah</a>
+                        <a class="dropdown-item" href="#">Online Taweezat / Istekhara</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown px-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Future Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Saylani University</a>
+                        <a class="dropdown-item" href="#">Saylani City</a>
+                    </div>
+                </li>
+
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Media</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+
+                <li class="nav-item dropdown px-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Donations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Bank Details</a>
+                        <a class="dropdown-item" href="#">Sadqa</a>
+                        <a class="dropdown-item" href="#">Aqiqa</a>
+                        <a class="dropdown-item" href="#">Other Donation</a>
+                        <a class="dropdown-item" href="#">Corona Effecties</a>
+                        <a class="dropdown-item" href="#">Ramzan - 2020</a>
+                        <a class="dropdown-item" href="#">Contact Us</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -198,23 +282,23 @@
     <div class="container">
         <div class="row mt-5 ml-2">
             <div class="col-md-4" align="center">
-            <div class="border shad p-5">
-                <img src="col2.png" alt="">
-                <h3 class="mt-2">ONLINE SADQAH</h3>
-            </div>
-            </div>
-
-            <div class="col-md-4" align="center">
                 <div class="border shad p-5">
-                <img src="welfare.png" alt="">
-                <h3  class="mt-2">WELFARE</h3>
+                    <img src="col2.png" alt="">
+                    <h3 class="mt-2">ONLINE SADQAH</h3>
                 </div>
             </div>
 
             <div class="col-md-4" align="center">
                 <div class="border shad p-5">
-                <img src="medical.png" alt="">
-                <h3  class="mt-2">MEDICAL</h3>
+                    <img src="welfare.png" alt="">
+                    <h3 class="mt-2">WELFARE</h3>
+                </div>
+            </div>
+
+            <div class="col-md-4" align="center">
+                <div class="border shad p-5">
+                    <img src="medical.png" alt="">
+                    <h3 class="mt-2">MEDICAL</h3>
                 </div>
             </div>
         </div>
@@ -225,22 +309,22 @@
         <div class="row mt-5 ml-2">
             <div class="col-md-4" align="center">
                 <div class="border shad p-5">
-                <img src="Dastarkhwan.png" alt="">
-                <h3 class="mt-2">DASTARKHWAN</h3>
-            </div>
-            </div>
-
-            <div class="col-md-4" align="center">
-                <div class="border shad p-5">
-                <img src="ROPLANT.png" alt="">
-                <h3 class="mt-2">RO PLANT</h3>
+                    <img src="Dastarkhwan.png" alt="">
+                    <h3 class="mt-2">DASTARKHWAN</h3>
                 </div>
             </div>
 
             <div class="col-md-4" align="center">
                 <div class="border shad p-5">
-                <img src="education.png" alt="">
-                <h3 class="mt-2">EDUCATION</h3>
+                    <img src="ROPLANT.png" alt="">
+                    <h3 class="mt-2">RO PLANT</h3>
+                </div>
+            </div>
+
+            <div class="col-md-4" align="center">
+                <div class="border shad p-5">
+                    <img src="education.png" alt="">
+                    <h3 class="mt-2">EDUCATION</h3>
                 </div>
             </div>
         </div>
@@ -257,16 +341,16 @@
                 </div>
                 <div class="row">
 
-                    <div class="col-md-4 col-sm-3 border p-3 m-2 shad"><img src="Hepatitis.png" alt=""> <span
+                    <div class="col-md-4 col-sm-12 border p-3 m-2 shad"><img src="Hepatitis.png" alt=""> <span
                             class="ml-4 h6">HEPATITIS</span></div>
-                    <div class="col-md-4 col-sm-3 border p-3 m-2 shad"> <img src="housing.png" alt=""><span
+                    <div class="col-md-4 col-sm-12 border p-3 m-2 shad"> <img src="housing.png" alt=""><span
                             class="ml-4 h6"> HOUSING SOCIETY</span></div>
 
                     <div class="w-100"></div>
 
-                    <div class="col-md-4 col-sm-3 border p-3 m-2 shad"><img src="IT.png" alt=""><span class="ml-4 h6">
+                    <div class="col-md-4 col-sm-12 border p-3 m-2 shad"><img src="IT.png" alt=""><span class="ml-4 h6">
                             IT LITERACY</span></div>
-                    <div class="col-md-4 col-sm-3 border p-3 m-2 shad"><img src="tharparkar.png" alt=""><span
+                    <div class="col-md-4 col-sm-12 border p-3 m-2 shad"><img src="tharparkar.png" alt=""><span
                             class="ml-4 h6"> THARPARKAR</span></div>
                 </div>
 
@@ -281,7 +365,7 @@
                 <div class="row">
 
 
-                    <div class="col-md-12 col-sm-3 border p-5">
+                    <div class="col-md-12 col-sm-12 border p-5 colupdate">
                         <marquee direction="up">President of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare
                             International Trust HeadOffice Karachi. More DetailsPresident of Pakistan (Dr. Arif Alvi)
                             Visited Saylani Welfare International Trust HeadOffice Karachi. More DetailsPresident of
@@ -309,12 +393,12 @@
 
             <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-md-2"><img src="rashan2.jpg" alt="" style="width:250px;"></div>
-                <div class="col-md-2"><img src="food.jpg" alt="" style="width:250px;"></div>
-                <div class="col-md-2"><img src="hazrat.jpg" alt="" style="width:250px;"></div>
-                <div class="col-md-2"><img src="hazrat.jpg" alt="" style="width:250px;"></div>
-                <div class="col-md-2"><img src="food.jpg" alt="" style="width:250px;"></div>
-                <div class="col-md-1"></div>
+                <div class="col-md-2 col-sm-12 px-2"><img src="rashan2.jpg" alt="" style="width:100%;"></div>
+                <div class="col-md-2 col-sm-12 px-2"><img src="food.jpg" alt="" style="width:100%"></div>
+                <div class="col-md-2 col-sm-12 px-2"><img src="hazrat.jpg" alt="" style="width:100%"></div>
+                <div class="col-md-2 col-sm-12 px-2"><img src="hazrat.jpg" alt="" style="width:100%;"></div>
+                <div class="col-md-2 col-sm-12 px-2"><img src="food.jpg" alt="" style="width:100%"></div>
+                <div class="col-md-1 col-sm-12 px-2"></div>
             </div>
 
         </div>
@@ -335,10 +419,11 @@
                 <p class="whitecolor "> <i class="fa fa-phone"></i> UK NO (+44)115 970 6256 </p>
                 <p class="whitecolor "> <i class="fa fa-envelope-o "></i> info@saylaniwelfare.com </p>
             </div>
-            <div class="col-md-4 mt-5 whitecolor text-center ">
+            <div class="col-md-4 mt-5 whitecolor ">
                 <h5>Useful Links</h5>
+                <span style="font-size: 1px; background-color: #427900;"> __________________________________ </span><span style="font-size: 1px; background-color:#fff;"> ___________________________________________________________________________________________________________________________________________________________________________________________</span>
             </div>
-            <div class="col-md-4 mt-5 whitecolor text-center  ">
+            <div class="col-md-4 mt-5 whitecolor">
                 <h5>Connect With Us</h5>
                 <i class="fa fa-facebook-official mr-2 ;" style="font-size:24px"></i>
                 <i class="fa fa-twitter mr-2" style="font-size:24px"></i>
